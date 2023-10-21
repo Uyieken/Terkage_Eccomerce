@@ -3,6 +3,7 @@ import { AiOutlineGoogle } from "react-icons/ai";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import "./LoginPage.css";
 import ErrorModal from "./ErrorModal";
+import { login } from "../../business_logic/auth-logic";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -36,11 +37,21 @@ const LoginPage = () => {
     return Object.keys(errors).length === 0;
   };
 
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validate()) {
-      // Felix, add the login logic here
+      const data = await login(email, password);
+
+      if (data) {
+        // Do something with the successful login data
+        // Maybe update state or navigate to another page
+        console.log('login successful')
+      } else {
+        openModal();
+      }
     } else {
       openModal();
     }
@@ -103,3 +114,4 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
