@@ -7,8 +7,10 @@ import { login } from "../../business_logic/auth-logic";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
+  const [emailValid, setEmailValid] = useState(false);
   const [password, setPassword] = useState("");
   const [loginStatus, setLoginStatus] = useState("initial");
+  
   const [errors, setErrors] = useState({});
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -38,6 +40,18 @@ const LoginPage = () => {
   };
 
 
+  const handleEmailChange = (e) => {
+    const value = e.target.value;
+    setEmail(value);
+    setEmailValid(validateEmail(value));
+
+  }
+  
+  const validateEmail = (email) => {
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email)
+  }
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -46,6 +60,7 @@ const LoginPage = () => {
       const data = await login(email, password);
 
       if (data) {
+
         // Do something with the successful login data
         // Maybe update state or navigate to another page
         console.log('login successful')
@@ -71,7 +86,9 @@ const LoginPage = () => {
             name="emailOrPhone"
             placeholder="Email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            // onChange={(e) => setEmail(e.target.value)}
+            onChange={handleEmailChange}
+            readOnly={emailValid}
           />
 
           <input
