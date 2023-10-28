@@ -1,0 +1,45 @@
+.first-div {
+  text-align: left; /* Align the text to the left */
+  padding-left: 40px;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  /* Add some left padding to move the content to the left */
+}
+
+.first-div button {
+  margin-right: 20px;
+  border: none;
+  height: 40px;
+  padding: 5px;
+  border-radius: 60px;
+  background-color: #4db4ff;
+  font-weight: 600;
+  color: #fff;
+}
+
+.first-div h1 {
+  font-weight: 800;
+  font-size: 80px;
+}
+
+.h5-text {
+  font-weight: 700;
+  color: #7f7d7d;
+}
+
+.blu {
+  color: #4db4ff;
+}
+
+.underline {
+  color: #4db4ff;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+}
+
+.sc-div {
+  display: flex;
+  justify-content: space-around;
+}

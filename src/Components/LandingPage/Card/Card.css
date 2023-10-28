@@ -1,0 +1,24 @@
+.card-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.card-div svg {
+  width: 90px;
+  height: 90px;
+  color: #4db4ff;
+}
+
+.card-div h5 {
+  font-weight: 700;
+}

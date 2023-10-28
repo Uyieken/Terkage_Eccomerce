@@ -1,0 +1,35 @@
+Navbar.css
+/* First Layer */
+.navbar:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box {
+  flex: 1; /* Make the search box take up available space */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-profile,
+.favorites,
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Second Layer */
+.navbar:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Ensure the links span the entire Navbar */
+}

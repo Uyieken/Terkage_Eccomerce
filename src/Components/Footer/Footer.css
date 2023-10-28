@@ -1,0 +1,57 @@
+.rectangle {
+  width: 1px;
+  height: 100px;
+  background: white;
+  margin: 0 30px 0 0;
+  float: left;
+  display: inline-block;
+}
+.footer-div {
+  display: flex; /* Use flexbox to create a row layout */
+  align-items: center; /* Vertically center items within the row */
+  justify-content: space-between; /* Create space between the items */
+  background-color: black;
+  height: 250px;
+}
+.social-media {
+  padding-right: 4rem;
+}
+
+newsletter {
+  background-color: white; /* White background color for this div */
+}
+
+.ff,
+.useful-links h5,
+.useful-links li,
+.newsletter h5,
+.social-media h5,
+.news-search-box input,
+.fs-buttons {
+  color: white; /* White color for the text */
+  /* Add any additional text styles as needed */
+}
+.useful-links ul li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.f-button {
+  border: 1px solid #ccc;
+  background-color: #4db4ff;
+  height: 38px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.f-input {
+  background-color: black;
+  color: white;
+  border: 2px solid;
+  padding: 5px;
+}
+
+.fs-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}

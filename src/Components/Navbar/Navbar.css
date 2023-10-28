@@ -1,0 +1,83 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+}
+
+.span {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.span p {
+  margin-left: -3px;
+}
+
+.nav-link {
+  margin: 0 15px; /* Equal space around each link */
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Add more styles as needed */
+.search-box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 40rem;
+  margin-right: 10rem;
+}
+
+.nav-select {
+  width: 68%;
+  height: 30px;
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 15px 0 0 15px;
+}
+
+.nav-input {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.nav-button {
+  /* margin-left: 100px; */
+  height: 30px;
+  width: 40%;
+  padding: 1px 3px;
+  border: 1px solid #ccc;
+  background-color: #4db4ff;
+  color: #fff;
+}
+/* Add this CSS to your stylesheet */
+.search-box button:last-child {
+  border-top-left-radius: 0; /* No rounding on the top-left corner */
+  border-bottom-left-radius: 0; /* No rounding on the bottom-left corner */
+  border-top-right-radius: 15px; /* Set the top-right corner radius */
+  border-bottom-right-radius: 15px; /* Set the bottom-right corner radius */
+}
+
+.navbar-layer:last-child nav {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+/* Navbar.css */
+/* Add this CSS to your stylesheet */
+.navbar:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Ensure the links span the entire Navbar */
+}
