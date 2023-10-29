@@ -3,10 +3,10 @@ import { AiOutlineGoogle } from "react-icons/ai";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import "./Registration.css";
 import ErrorModal from "../LoginPage/ErrorModal";
-// import { register } from "../../business_logic/auth-logic";
+import { register } from "../../business_logic/auth-logic";
 
 const Registration = () => {
-  const [name, setName] = useState("");
+  const [full_name, setfull_Name] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [registrationStatus, setRegistrationStatus] = useState("initial");
@@ -24,7 +24,7 @@ const Registration = () => {
   const validate = () => {
     const errors = {};
 
-    if (!name) {
+    if (!full_name) {
       errors.name = "Name is required";
     }
 
@@ -46,8 +46,14 @@ const Registration = () => {
     e.preventDefault();
 
     if (validate()) {
-      //   const registrationData = await register(name, email, password);
-
+      // const registrationData = await register(full_name, email, password);
+      const data = await register(full_name, email, password);
+      if (data) {
+        setRegistrationStatus("success");
+      } else {
+        setRegistrationStatus("error");
+      }
+  
       console.log("normal");
     } else {
       openModal();
@@ -67,8 +73,8 @@ const Registration = () => {
             type="text"
             name="name"
             placeholder="Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={full_name}
+            onChange={(e) => setfull_Name(e.target.value)}
           />
 
           <input

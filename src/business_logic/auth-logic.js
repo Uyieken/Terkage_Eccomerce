@@ -30,3 +30,35 @@ const login = async (email, password) => {
 export {
     login
 }
+
+const register = async (full_name, email, password) => {
+    try {
+        const response = await fetch(`${apiUrl}/register/`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ full_name, email, password }),
+        });
+
+        if (!response.ok) {
+            // Handle error scenarios
+            console.error('A Server Error occurred', response);
+            return null;
+        }
+
+        const data = await response.json();
+        // Do something with the response data
+        console.log(data);
+        return data;
+    } catch (error) {
+        console.error("Error:", error);
+        return null;
+    }
+};
+
+
+export {
+    register
+}
+
