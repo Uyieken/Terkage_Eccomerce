@@ -3,32 +3,64 @@
   padding-left: 40px;
   padding-top: 4%;
   padding-bottom: 5%;
+
   /* Add some left padding to move the content to the left */
 }
 
-.first-div button {
-  margin-right: 20px;
-  border: none;
-  height: 40px;
-  padding: 5px;
-  border-radius: 60px;
-  background-color: #4db4ff;
-  font-weight: 600;
-  color: #fff;
+.divided {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(to left, #ecf8fb, #f9fcfd);
+}
+
+.backg-pic {
+  width: 40%; /* Adjust the width to your preference */
+  padding-top: 3rem;
+}
+
+.backg-pic img {
+  width: 450px;
+  height: 500px;
+}
+
+.fd-text {
+  width: 60%;
+  line-height: 1.8;
 }
 
 .first-div h1 {
-  font-weight: 800;
-  font-size: 80px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.8;
+}
+.first-div h2 {
+  font-weight: 400;
+  font-size: 25px;
 }
 
 .h5-text {
-  font-weight: 700;
-  color: #7f7d7d;
+  font-weight: 900;
+  font-size: 20px;
+}
+.span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.blu {
-  color: #4db4ff;
+.orange-btn {
+  background: #ee8909;
+  color: #ffffff;
+  height: 50px;
+  width: 80px;
+  margin-top: 25px;
+  border: none;
+}
+
+.orange-btn svg {
+  width: 50px;
+  height: 50px;
 }
 
 .underline {
@@ -42,4 +74,360 @@
 .sc-div {
   display: flex;
   justify-content: space-around;
+}
+
+.lp-pagination {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.lp-pagination p {
+  color: #34c0dd;
+}
+
+.lp-pagination h5 {
+  font-size: 20px;
+}
+
+.grey-div {
+  background-color: #ececed;
+  height: 900px;
+  margin-bottom: 0;
+}
+
+.UCard-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 90%; /* Limit maximum width */
+  padding-left: 1%; /* Adjust padding as needed */
+}
+
+.filter {
+  background-color: #eef6f9;
+  padding-bottom: 4rem;
+  margin-top: 0;
+}
+
+.h1-div {
+  text-align: center;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.filter-cards {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-left: 7%;
+  margin-right: auto;
+
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.center-div1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1125px) {
+  .backg-pic img {
+    width: 350px;
+    height: 450px;
+  }
+
+  .filter-cards .UCard-div {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .UCard-div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+  }
+
+  .filter-cards {
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width: 1122px) {
+  .filter-cards .UCard-div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .orange-btn {
+    background: #ee8909;
+    color: #ffffff;
+    height: 45px;
+    width: 70px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border: none;
+  }
+  .orange-btn svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .backg-pic img {
+    width: 300px;
+    height: 400px;
+  }
+
+  @media screen and (max-width: 824px) {
+    .center-div {
+      height: 500px;
+    }
+
+    .grey-div {
+      background-color: #ececed;
+      height: 2200px;
+      margin-bottom: 0;
+    }
+  }
+
+  .first-div h1 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  .first-div h2 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .orange-btn {
+    height: 40px;
+    width: 70px;
+    margin-top: 50px;
+    border: none;
+  }
+  .orange-btn svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 752px) {
+  .backg-pic img {
+    width: 250px;
+    height: 300px;
+  }
+  .UCard-div {
+    max-width: 100%; /* Allow full width on smaller screens */
+    padding: auto; /* Adjust padding for smaller screens */
+  }
+  .first-div h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .first-div h2 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 626px) {
+  .backg-pic img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .first-div h1 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .first-div h2 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .orange-btn {
+    background: #ee8909;
+    color: #ffffff;
+    height: 40px;
+    width: 80px;
+    margin-top: 70px;
+    border: none;
+  }
+
+  .orange-btn svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .backg-pic img {
+    width: 150px;
+    height: 250px;
+  }
+
+  .first-div h1 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.5;
+  }
+  .first-div h2 {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .first-div h5 {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .orange-btn {
+    background: #ee8909;
+    color: #ffffff;
+    height: 40px;
+    width: 80px;
+    margin-top: 50px;
+
+    border: none;
+  }
+
+  .orange-btn svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  .orange-btn {
+    background: #ee8909;
+    color: #ffffff;
+    height: 30px;
+    width: 80px;
+    margin-top: 50px;
+
+    border: none;
+  }
+
+  .orange-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .backg-pic img {
+    width: 100px;
+    height: 250px;
+  }
+
+  .first-div h1 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .first-div h2 {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .first-div h5 {
+    font-weight: 700;
+    font-size: 11px;
+  }
+
+  .orange-btn {
+    background: #ee8909;
+    color: #ffffff;
+    height: 30px;
+    width: 80px;
+    margin-top: 30px;
+
+    border: none;
+  }
+
+  .orange-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  @media screen and (max-width: 302px) {
+    .filter-cards {
+      margin-left: auto;
+    }
+    .filter-options {
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 292px) {
+  .backg-pic img {
+    width: 60px;
+    height: 230px;
+  }
+
+  .first-div {
+    padding-left: 15px;
+  }
+  .first-div h1 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .first-div h2 {
+    font-weight: 400;
+    font-size: 11px;
+  }
+  .first-div h5 {
+    font-weight: 700;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 244px) {
+  .backg-pic img {
+    width: 40px;
+    height: 150px;
+  }
+  .backg-pic {
+    width: 50%; /* Adjust the width to your preference */
+    padding-top: 3rem;
+  }
+
+  .orange-btn {
+    background: #ee8909;
+    color: #ffffff;
+    height: 20px;
+    width: 70px;
+    margin-top: 30px;
+
+    border: none;
+  }
+
+  .orange-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .filter-cards {
+    margin: 0;
+    padding: 0;
+  }
 }

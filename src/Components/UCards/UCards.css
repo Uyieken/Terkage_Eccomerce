@@ -1,0 +1,155 @@
+.ucard-div {
+  position: relative;
+  padding: 0 0.5%;
+  width: 250px;
+  height: 330px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+}
+
+.main-content img {
+  max-width: 100%;
+  max-height: 150px;
+  margin-top: 3rem;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.ucard-description {
+  text-align: left;
+  width: 150px;
+  margin-right: 5rem;
+  box-sizing: border-box;
+  /* Adjust as needed */
+}
+
+.ucard-description h5 {
+  margin: 0 0 0 0;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.ucard-description h6 {
+  margin: 0 0 0 0;
+  color: #a4a4a4;
+  font-weight: 500;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.price-description {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.8rem;
+}
+
+.price-description h5 {
+  margin-right: 5rem;
+  margin-bottom: 0;
+}
+
+.add {
+  cursor: pointer;
+  padding-top: 1.5rem;
+  margin-left: 2.8rem;
+  font-size: 24px;
+}
+
+/* .card-div svg {
+  color: #383838;
+} */
+@media screen and (max-width: 1240px) {
+  .ucard-div {
+    position: relative;
+    padding: 0 0.5%;
+    width: 250px;
+    height: 290px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  .main-content img {
+    max-width: 80%;
+    max-height: 100px;
+    margin-top: 3rem;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 927px) {
+  .ucard-div {
+    position: relative;
+    padding: 0 0.5%;
+    width: 220px;
+    height: 260px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  .main-content {
+    padding: 5px;
+  }
+  .main-content img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-top: 3rem;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+
+  .ucard-description {
+    text-align: left;
+    width: 150px;
+    margin-right: 4rem;
+    box-sizing: border-box;
+    /* Adjust as needed */
+  }
+  .ucard-description h5 {
+    font-size: 13px;
+  }
+
+  .price-description {
+    margin-right: 2rem;
+  }
+
+  .price-description h5 {
+    margin-right: 5rem;
+    margin-bottom: 0;
+  }
+
+  .add {
+    cursor: pointer;
+    padding-top: 1.5rem;
+    margin-left: 2rem;
+    font-size: 24px;
+  }
+}

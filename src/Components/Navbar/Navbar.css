@@ -1,83 +1,99 @@
-/* styles.css */
-body {
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
-}
-
-.span {
+.nav-div {
+  width: auto;
+  height: 10px;
   display: flex;
-  flex-direction: row;
-  align-content: space-between;
-}
-.span p {
-  margin-left: -3px;
-}
-
-.nav-link {
-  margin: 0 15px; /* Equal space around each link */
-}
-
-.container {
-  padding: 20px;
-}
-
-/* Add more styles as needed */
-.search-box {
-  display: flex;
+  border: 2px solid #f9fcfd;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  width: 40rem;
-  margin-right: 10rem;
+  background-image: linear-gradient(to right, #ecf8fb, #f9fcfd);
+  padding: 2rem;
 }
 
-.nav-select {
-  width: 68%;
-  height: 30px;
-  padding: 1px;
-  border: 1px solid #ccc;
-  border-radius: 15px 0 0 15px;
-}
-
-.nav-input {
-  width: 100%;
-  height: 30px;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-.nav-button {
-  /* margin-left: 100px; */
-  height: 30px;
-  width: 40%;
-  padding: 1px 3px;
-  border: 1px solid #ccc;
-  background-color: #4db4ff;
-  color: #fff;
-}
-/* Add this CSS to your stylesheet */
-.search-box button:last-child {
-  border-top-left-radius: 0; /* No rounding on the top-left corner */
-  border-bottom-left-radius: 0; /* No rounding on the bottom-left corner */
-  border-top-right-radius: 15px; /* Set the top-right corner radius */
-  border-bottom-right-radius: 15px; /* Set the bottom-right corner radius */
-}
-
-.navbar-layer:last-child nav {
-  justify-content: space-between;
-  width: 100%;
+.nav-logo {
   display: flex;
-}
-/* Navbar.css */
-/* Add this CSS to your stylesheet */
-.navbar:last-child {
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.nav-links {
+.navbar-links {
+  flex: 1;
   display: flex;
-  justify-content: space-around;
-  width: 100%; /* Ensure the links span the entire Navbar */
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+}
+
+.navbar-links li {
+  margin: 0 1rem;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.signin-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.signin-div p {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #17bbdb;
+  font-weight: 500;
+}
+
+.small-navbar {
+  display: none;
+}
+
+.small-navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, #ecf8fb, #f9fcfd);
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.small-navbar-overlay .overlay__close {
+  font-size: 27px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.small-navbar-overlay-links {
+  list-style: none;
+}
+.small-navbar-overlay-links li {
+  margin: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .small-navbar {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__navbar {
+    padding: 1rem;
+  }
+
+  .signin-div {
+    display: none;
+  }
 }

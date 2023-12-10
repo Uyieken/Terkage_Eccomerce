@@ -57,30 +57,70 @@
 //       </Navbar>
 
 //       {/* Second Layer */}
-<Navbar bg="light" expand="lg">
-  <Container>
-    <div className="nav-links">
-      <Link to="/" className="nav-link">
-        Home
-      </Link>
-      <Link to="/shops" className="nav-link">
-        Shops
-      </Link>
-      <Link to="/services" className="nav-link">
-        Services
-      </Link>
-      <Link to="/blog" className="nav-link">
-        Blog
-      </Link>
-      <Link to="/faqs" className="nav-link">
-        FAQs
-      </Link>
-      <Link to="/contact" className="nav-link">
-        Contact Us
-      </Link>
-    </div>
-  </Container>
-</Navbar>;
+{
+  /* <Navbar bg="light" expand="lg">
+        <Navbar.Brand>
+          <Link to="/">LOGO</Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-nav" />
+
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="ms-auto">
+            <form action="/search" method="get">
+              <div class="search-box">
+                <select className="nav-select" name="category">
+                  <option value="">All Category</option>
+                </select>
+                <input
+                  type="text"
+                  name="q"
+                  className="nav-input"
+                  placeholder="Search Products Here..."
+                />
+                <button className="nav-button" type="submit">
+                  Search
+                </button>
+              </div>
+            </form>
+
+            <Link to="/profile" className="nav-link">
+              <FiUser size={30} />
+            </Link>
+
+            <Link to="/favorites" className="nav-link">
+              <AiOutlineHeart size={30} />
+            </Link>
+
+            <Link to="/orders" className="nav-link">
+              <AiOutlineShoppingCart size={30} />
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+
+      <Navbar bg="light" expand="lg">
+        <div className="nav-links">
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+          <Link to="/shops" className="nav-link">
+            Shops
+          </Link>
+          <Link to="/services" className="nav-link">
+            Services
+          </Link>
+          <Link to="/blog" className="nav-link">
+            Blog
+          </Link>
+          <Link to="/faqs" className="nav-link">
+            FAQs
+          </Link>
+          <Link to="/contact" className="nav-link">
+            Contact Us
+          </Link>
+        </div>
+      </Navbar> */
+}
 //     </div>
 //   );
 // };

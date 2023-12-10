@@ -17,7 +17,6 @@ const Footer = () => {
           <h5>Usesful Links</h5>
           <li>Useful links</li>
           <li>Useful links</li>
-          <li>Useful links</li>
         </ul>
       </div>
       <div className="rectangle"></div>
@@ -42,13 +41,13 @@ const Footer = () => {
         <h5>Social media</h5>
         <div className="fs-buttons">
           <Link>
-            <FaFacebook color="white" size={25} />
+            <FaFacebook color="white" size={23} />
           </Link>
           <Link>
-            <FaInstagramSquare color="white" size={25} />
+            <FaInstagramSquare color="white" size={23} />
           </Link>
           <Link>
-            <AiFillTwitterCircle color="white" size={25} />
+            <AiFillTwitterCircle color="white" size={23} />
           </Link>
         </div>
       </div>

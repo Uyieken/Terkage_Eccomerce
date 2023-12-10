@@ -6,7 +6,7 @@ const Card = ({ icon, title }) => {
   return (
     <div className="card-div">
       {icon}
-      <h5>{title}</h5>
+      <h2>{title}</h2>
     </div>
   );
 };
